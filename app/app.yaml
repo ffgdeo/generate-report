@@ -1,0 +1,8 @@
+command: ["streamlit", "run", "app.py"]
+env:
+  - name: EXPORT_VOLUME_PATH
+    value: /Volumes/fd_fevm_classic_catalog/deck_demo/exports
+  - name: DECK_JOB_ID
+    valueFrom: deck-job
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
